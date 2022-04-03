@@ -5,11 +5,11 @@ metadata:
 spec:
    replicas: 3
    selector:
-     app: myjenkins-pod
+     app: myjekins-pod
    template:
      metadata:
        labels:
-          app: myjenkins-pod
+          app: myjekins-pod
      spec:
         containers:
         - name: myjenkins-container
