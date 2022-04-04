@@ -3,15 +3,13 @@ kind: ReplicationController
 metadata:
   name: myjenkins-rc
 spec:
-   replicas: 5
+   replicas: 3
    selector: 
      app: myjenkins-pod
-     version: 2.7.2
    template:
      metadata:
        labels:
-          app: myjenkins-pod 
-          version: 2.7.2
+          app: myjenkins-pod
      spec:
         containers:
         - name: myjenkins-container   
